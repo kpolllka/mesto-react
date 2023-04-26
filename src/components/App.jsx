@@ -9,21 +9,22 @@ import ImagePopup from "./ImagePopup";
 function App() {
 
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
+  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
+  const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState({});
+
   const handleEditAvatarClick = () => {
     setIsEditAvatarPopupOpen(!isEditAvatarPopupOpen);
   };
-
-  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
+  
   const handleEditProfileClick = () => {
     setIsEditProfilePopupOpen(!isEditProfilePopupOpen);
   };
-
-  const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
+  
   const handleAddPlaceClick = () => {
     setIsAddPlacePopupOpen(!isAddPlacePopupOpen);
   };
-
-  const [selectedCard, setSelectedCard] = useState({});
+  
   const handleCardClick = (card) => {
     setSelectedCard(card);
   };
