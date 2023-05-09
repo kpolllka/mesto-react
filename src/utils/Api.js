@@ -70,13 +70,13 @@ class Api {
     }).then((res) => this._getResponse(res));
   }
 
-  toggleLike({cardId, isLike}) {
+  toggleLike(cardId, isLike) {
     return isLike ? this._removeLike(cardId) : this._addLike(cardId); //аналог записи в комменте ниже
-  //   if (isLike) {
-  //     return this._removeLike(cardId);
-  //   } else {
-  //     return this._addLike(cardId);
-  //   }
+    // if (isLike) {
+    //   return this._removeLike(cardId);
+    // } else {
+    //   return this._addLike(cardId);
+    // }
   }
 }
 
