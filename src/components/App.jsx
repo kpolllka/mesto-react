@@ -29,7 +29,8 @@ function App() {
   }, []);
   
   const handleEditAvatarClick = () => {
-    setIsEditAvatarPopupOpen(!isEditAvatarPopupOpen);
+    setIsEditAvatarPopupOpen(true);
+    // setIsEditAvatarPopupOpen(!isEditAvatarPopupOpen); //аналог выше
   };
   
   const handleEditProfileClick = () => {
